@@ -20,7 +20,7 @@ public class MutantController {
 
     @PostMapping("/mutant")
     public ResponseEntity<List<JSONPObject>> checkDNA(@Valid @RequestBody MutantDomain mutant) {
-        return new ResponseEntity(service.isMutant(mutant.getDna()), HttpStatus.CREATED);
+        return new ResponseEntity(service.isMutant(mutant.getDna()), HttpStatus.OK);
     }
 
     @GetMapping("/stats")

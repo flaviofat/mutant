@@ -96,10 +96,4 @@ public class MutantServiceImpl implements MutantService{
         return domain;
     }
 
-    public static void main(String[] args) {
-        String[] dna = {"ATGCGA", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"};
-        //String[] dna = {"ZZZZZZ", "ZZZZZZ", "ZZZZZZ", "ZZZZZZ", "CCCCTA", "ZZZZZZ"};
-        System.out.println(new MutantServiceImpl().isMutant(dna));
-    }
-
 }
