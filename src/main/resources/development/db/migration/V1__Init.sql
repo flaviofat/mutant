@@ -1,0 +1,7 @@
+CREATE TABLE DNA (
+  ID bigint NOT NULL AUTO_INCREMENT,
+  DNA varchar (3000) NOT NULL,
+  IS_HUMAN boolean NOT NULL,
+  PRIMARY KEY (ID)
+);
+

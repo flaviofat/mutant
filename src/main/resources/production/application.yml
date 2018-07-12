@@ -1,0 +1,19 @@
+site:
+  database:
+    username:
+    password:
+    urlconnection: jdbc:mysql://-/mutant?verifyServerCertificate=false&useSSL=true
+
+spring:
+  datasource:
+    url: ${site.database.urlconnection}
+    username: ${site.database.username}
+    password: ${site.database.password}
+    driver-class-name: com.mysql.jdbc.Driver
+
+flyway:
+  enabled: false
+
+msg:
+  dna_required: 'DNA required'
+  no_mutant: 'NO MUTANT DETECTED'

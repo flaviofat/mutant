@@ -1,0 +1,24 @@
+site:
+  database:
+    username: root
+    password:
+    urlconnection: jdbc:mysql://localhost:3306/mutant?verifyServerCertificate=false&useSSL=true
+
+spring:
+  datasource:
+    url: ${site.database.urlconnection}
+    username: ${site.database.username}
+    password: ${site.database.password}
+    driver-class-name: com.mysql.jdbc.Driver
+
+flyway:
+  enabled: true
+  locations: classpath:db/migration
+  password: ${site.database.password}
+  url: ${site.database.urlconnection}
+  user: ${site.database.username}
+  validateOnMigrate: false
+
+msg:
+  dna_required: 'DNA required'
+  no_mutant: 'NO MUTANT DETECTED'
