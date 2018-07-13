@@ -22,7 +22,7 @@ OBS.: This project uses FlyWay dbMigration, if you want to see the db creation s
 ## API URL
 URL local: http://localhost:8080/
 
-URL in Amazon: Coming soon
+URL in Amazon: http://mutant-env.ppnvsupnng.us-east-2.elasticbeanstalk.com
 
 
 ## SERVICES
@@ -57,7 +57,7 @@ Response: 200 (application/json)
     "ratio": 1.5
 }
 ```
-OBS.: See all the services available in this API in a simplified way using Swagger, just access the "/swagger-ui.html" of this application, ex: http://localhost:8080/swagger-ui.html
+OBS.: See all the services available in this API in a simplified way using Swagger, just access the "/swagger-ui.html" of this application, ex: http://mutant-env.ppnvsupnng.us-east-2.elasticbeanstalk.com/swagger-ui.html
 
 
 ## Project creator
