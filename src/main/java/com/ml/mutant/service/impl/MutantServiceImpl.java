@@ -17,9 +17,14 @@ public class MutantServiceImpl implements MutantService{
     final static String DNA_SEQ_CCCC = "CCCC";
     final static String DNA_SEQ_GGGG = "GGGG";
     final static String DNA_SEQ_AAAA = "AAAA";
+    final static String DNA_SEQ_TTTT = "TTTT";
+
+    private DnaRepository dnaRepository;
 
     @Autowired
-    private DnaRepository dnaRepository;
+    public MutantServiceImpl(DnaRepository dnaRepository) {
+        this.dnaRepository = dnaRepository;
+    }
 
     public Boolean isMutant(String[] dna) {
 
@@ -68,7 +73,7 @@ public class MutantServiceImpl implements MutantService{
     }
 
     private Boolean validateDna(String dna){
-        if (dna.contains(DNA_SEQ_AAAA) || dna.contains(DNA_SEQ_CCCC) || dna.contains(DNA_SEQ_GGGG))
+        if (dna.contains(DNA_SEQ_AAAA) || dna.contains(DNA_SEQ_CCCC) || dna.contains(DNA_SEQ_GGGG) || dna.contains(DNA_SEQ_TTTT) )
             return true;
         return false;
     }
